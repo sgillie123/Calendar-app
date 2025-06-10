@@ -32,7 +32,7 @@ const CalendarApp = () => {
             <span>7</span>
             <span>8</span>
             <span>9</span>
-            <span>10</span>
+            <span className="current-day">10</span>
             <span>11</span>
             <span>12</span>
             <span>13</span>
@@ -64,13 +64,13 @@ const CalendarApp = () => {
                 <input type="number" name="minutes" min={0} max={60} className="minutes" />
             </div>
             <textarea placeholder="Enter Event Text (Maximum 60 Characters)"></textarea>
-            <button className="event-popup-bts">Add Event</button>
-            <button className="close-events-popup">
+            <button className="event-popup-btn">Add Event</button>
+            <button className="close-event-popup">
                 <i className="bx bx-x"></i>
             </button>
         </div>
         <div className="event">
-            <div className="event-date-wraper">
+            <div className="event-date-wrapper">
                 <div className="event-date">June 07,2025 </div>
                 <div className="event-time">10:00</div>
             </div>
